@@ -8,22 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		E00C4DC121918C19005B8D74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00C4DC021918C19005B8D74 /* AppDelegate.swift */; };
-		E00C4DC321918C19005B8D74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00C4DC221918C19005B8D74 /* ViewController.swift */; };
+		E00C4DC321918C19005B8D74 /* DailyTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00C4DC221918C19005B8D74 /* DailyTaskVC.swift */; };
 		E00C4DC621918C19005B8D74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E00C4DC421918C19005B8D74 /* Main.storyboard */; };
 		E00C4DC921918C19005B8D74 /* Daily_Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E00C4DC721918C19005B8D74 /* Daily_Task.xcdatamodeld */; };
 		E00C4DCB21918C1B005B8D74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E00C4DCA21918C1B005B8D74 /* Assets.xcassets */; };
 		E00C4DCE21918C1B005B8D74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E00C4DCC21918C1B005B8D74 /* LaunchScreen.storyboard */; };
+		E00C4DD62191A18C005B8D74 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00C4DD52191A18C005B8D74 /* TaskCell.swift */; };
+		E091A6802191EA3B00298453 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E091A67F2191EA3B00298453 /* RoundedShadowView.swift */; };
+		E091A6822191F20900298453 /* taskType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E091A6812191F20900298453 /* taskType.swift */; };
+		E0EF78312192A64600C68CE5 /* TaskCreateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EF78302192A64600C68CE5 /* TaskCreateVC.swift */; };
+		E0F029512193060A009FF115 /* UiViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F029502193060A009FF115 /* UiViewControllerExt.swift */; };
+		E0F0295321930EA9009FF115 /* BindKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F0295221930EA9009FF115 /* BindKeyboard.swift */; };
+		E0F029552193127A009FF115 /* UIBtnExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F029542193127A009FF115 /* UIBtnExt.swift */; };
+		E0F0295721931CC7009FF115 /* CompleteTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F0295621931CC7009FF115 /* CompleteTaskVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E00C4DBD21918C19005B8D74 /* Daily Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E00C4DC021918C19005B8D74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E00C4DC221918C19005B8D74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E00C4DC221918C19005B8D74 /* DailyTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTaskVC.swift; sourceTree = "<group>"; };
 		E00C4DC521918C19005B8D74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E00C4DC821918C19005B8D74 /* Daily_Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Daily_Task.xcdatamodel; sourceTree = "<group>"; };
 		E00C4DCA21918C1B005B8D74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E00C4DCD21918C1B005B8D74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E00C4DCF21918C1B005B8D74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E00C4DD52191A18C005B8D74 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		E091A67F2191EA3B00298453 /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		E091A6812191F20900298453 /* taskType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskType.swift; sourceTree = "<group>"; };
+		E0EF78302192A64600C68CE5 /* TaskCreateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCreateVC.swift; sourceTree = "<group>"; };
+		E0F029502193060A009FF115 /* UiViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiViewControllerExt.swift; sourceTree = "<group>"; };
+		E0F0295221930EA9009FF115 /* BindKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindKeyboard.swift; sourceTree = "<group>"; };
+		E0F029542193127A009FF115 /* UIBtnExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBtnExt.swift; sourceTree = "<group>"; };
+		E0F0295621931CC7009FF115 /* CompleteTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteTaskVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +72,12 @@
 		E00C4DBF21918C19005B8D74 /* Daily Task */ = {
 			isa = PBXGroup;
 			children = (
+				E091A67E2191E6A600298453 /* Extensions */,
+				E091A67D2191E69600298453 /* Enums */,
+				E091A67C2191E67D00298453 /* Model */,
+				E091A67B2191E67600298453 /* View */,
+				E091A67A2191E66700298453 /* Controller */,
 				E00C4DC021918C19005B8D74 /* AppDelegate.swift */,
-				E00C4DC221918C19005B8D74 /* ViewController.swift */,
 				E00C4DC421918C19005B8D74 /* Main.storyboard */,
 				E00C4DCA21918C1B005B8D74 /* Assets.xcassets */,
 				E00C4DCC21918C1B005B8D74 /* LaunchScreen.storyboard */,
@@ -65,6 +85,50 @@
 				E00C4DC721918C19005B8D74 /* Daily_Task.xcdatamodeld */,
 			);
 			path = "Daily Task";
+			sourceTree = "<group>";
+		};
+		E091A67A2191E66700298453 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E00C4DC221918C19005B8D74 /* DailyTaskVC.swift */,
+				E0EF78302192A64600C68CE5 /* TaskCreateVC.swift */,
+				E0F0295621931CC7009FF115 /* CompleteTaskVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E091A67B2191E67600298453 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E00C4DD52191A18C005B8D74 /* TaskCell.swift */,
+				E091A67F2191EA3B00298453 /* RoundedShadowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E091A67C2191E67D00298453 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E091A67D2191E69600298453 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				E091A6812191F20900298453 /* taskType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		E091A67E2191E6A600298453 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E0F029502193060A009FF115 /* UiViewControllerExt.swift */,
+				E0F0295221930EA9009FF115 /* BindKeyboard.swift */,
+				E0F029542193127A009FF115 /* UIBtnExt.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +202,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E00C4DC321918C19005B8D74 /* ViewController.swift in Sources */,
+				E091A6822191F20900298453 /* taskType.swift in Sources */,
+				E091A6802191EA3B00298453 /* RoundedShadowView.swift in Sources */,
+				E0F029512193060A009FF115 /* UiViewControllerExt.swift in Sources */,
+				E00C4DD62191A18C005B8D74 /* TaskCell.swift in Sources */,
+				E0EF78312192A64600C68CE5 /* TaskCreateVC.swift in Sources */,
+				E00C4DC321918C19005B8D74 /* DailyTaskVC.swift in Sources */,
+				E0F029552193127A009FF115 /* UIBtnExt.swift in Sources */,
+				E0F0295721931CC7009FF115 /* CompleteTaskVC.swift in Sources */,
+				E0F0295321930EA9009FF115 /* BindKeyboard.swift in Sources */,
 				E00C4DC121918C19005B8D74 /* AppDelegate.swift in Sources */,
 				E00C4DC921918C19005B8D74 /* Daily_Task.xcdatamodeld in Sources */,
 			);
