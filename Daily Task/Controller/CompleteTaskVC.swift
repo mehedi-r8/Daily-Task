@@ -62,7 +62,7 @@ class CompleteTaskVC: UIViewController, UITextFieldDelegate {
         
         task.taskName = taskName
         task.taskType = taskType.rawValue
-        task.taskProgress = Int32(pointsTextField.text!)!
+        task.goalCompletionValue = Int32(pointsTextField.text!)!
         task.taskProgress = Int32(0)
         
         do {

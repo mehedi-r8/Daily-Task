@@ -70,7 +70,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="wOc-kd-esS">
-                                                    <rect key="frame" x="28" y="13" width="315" height="54"/>
+                                                    <rect key="frame" x="35" y="13" width="308" height="54"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="I5z-rB-s9z">
                                                             <rect key="frame" x="0.0" y="0.0" width="49.5" height="54"/>
@@ -90,7 +90,7 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Nqh-ad-bYc">
-                                                            <rect key="frame" x="68.5" y="0.0" width="246.5" height="54"/>
+                                                            <rect key="frame" x="68.5" y="0.0" width="239.5" height="54"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Learn Swift daily 2 hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wir-yM-Ya2">
                                                                     <rect key="frame" x="0.0" y="0.0" width="203.5" height="28.5"/>
@@ -118,19 +118,32 @@
                                                     <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👌🏻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Io-yh-ZDA">
+                                                    <rect key="frame" x="8" y="27.5" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="5q4-j7-euW"/>
+                                                        <constraint firstAttribute="height" constant="25" id="fgw-Jm-GAf"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstItem="wOc-kd-esS" firstAttribute="leading" secondItem="php-Or-jKJ" secondAttribute="leadingMargin" constant="8" id="9hk-t9-c49"/>
+                                                <constraint firstItem="3Io-yh-ZDA" firstAttribute="leading" secondItem="php-Or-jKJ" secondAttribute="leading" constant="8" id="Dsr-rx-WHN"/>
                                                 <constraint firstItem="OmA-eH-Vor" firstAttribute="centerY" secondItem="php-Or-jKJ" secondAttribute="centerY" id="Mjo-Yx-org"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="OmA-eH-Vor" secondAttribute="trailing" constant="8" id="Sx1-tq-v9b"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="wOc-kd-esS" secondAttribute="bottom" constant="2" id="TBh-zx-JU6"/>
                                                 <constraint firstItem="wOc-kd-esS" firstAttribute="top" secondItem="php-Or-jKJ" secondAttribute="topMargin" constant="2" id="YzH-DH-1My"/>
+                                                <constraint firstItem="wOc-kd-esS" firstAttribute="leading" secondItem="3Io-yh-ZDA" secondAttribute="trailing" constant="2" id="m32-O2-27Y"/>
+                                                <constraint firstItem="3Io-yh-ZDA" firstAttribute="centerY" secondItem="php-Or-jKJ" secondAttribute="centerY" id="ouq-5N-VpL"/>
                                                 <constraint firstItem="OmA-eH-Vor" firstAttribute="leading" secondItem="wOc-kd-esS" secondAttribute="trailing" constant="8" id="rb1-5f-3Df"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
+                                            <outlet property="completeLbl" destination="3Io-yh-ZDA" id="w7A-Sp-m1u"/>
                                             <outlet property="taskLabel" destination="Wir-yM-Ya2" id="o29-dL-t5J"/>
                                             <outlet property="taskProgress" destination="OmA-eH-Vor" id="9Kn-Jk-gxS"/>
                                             <outlet property="typeLabel" destination="asp-ad-vwC" id="EDj-FV-JAA"/>

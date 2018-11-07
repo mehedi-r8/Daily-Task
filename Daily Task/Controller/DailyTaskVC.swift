@@ -85,16 +85,42 @@ extension DailyTaskVC: UITableViewDelegate, UITableViewDataSource {
             self.fetchCoreDataObjects()
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
+        
+        let addAction = UITableViewRowAction(style: .normal, title: "ADD 1") { (rowAction, indexPath) in
+            self.setProgress(atIndexPath: indexPath)
+            tableView.reloadRows(at: [indexPath], with: .automatic)
+        }
         deleteAction.backgroundColor = #colorLiteral(red: 0.521568656, green: 0.1098039225, blue: 0.05098039284, alpha: 1)
-        return [deleteAction]
+        addAction.backgroundColor = #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)
+        return [deleteAction, addAction]
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
 extension DailyTaskVC {
+    
+    func setProgress(atIndexPath indexpath: IndexPath ) {
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else {
+            return
+        }
+        
+        let chosenTask = tasks[indexpath.row]
+        
+        if chosenTask.taskProgress < chosenTask.goalCompletionValue {
+            chosenTask.taskProgress = chosenTask.taskProgress + 1
+        } else {
+            return
+        }
+        
+        do {
+            try managedContext.save()
+        } catch {
+            debugPrint("could not set progress\(error.localizedDescription)")
+        }
+    }
     
     func removeTask(atIndexPath indexpath: IndexPath) {
         guard let managedContext = appDelegate?.persistentContainer.viewContext else {

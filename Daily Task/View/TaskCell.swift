@@ -13,6 +13,10 @@ class TaskCell: UITableViewCell {
     @IBOutlet weak var taskLabel: UILabel!
     @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var taskProgress: UILabel!
+    @IBOutlet weak var completeLbl: UILabel!
+    @IBOutlet weak var completeView: UIView!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -22,5 +26,11 @@ class TaskCell: UITableViewCell {
         self.taskLabel.text = task.taskName
         self.typeLabel.text = task.taskType
         self.taskProgress.text = String(task.taskProgress)
+        
+        if task.taskProgress == task.goalCompletionValue {
+            self.completeLbl.text = "👌🏻"
+        } else {
+            self.completeLbl.text = ""
+        }
     }
 }
